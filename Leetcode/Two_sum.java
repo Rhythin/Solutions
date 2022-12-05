@@ -1,8 +1,12 @@
+package Leetcode;
+
+import java.util.HashMap;
+
 class Solution {
     public int[] twoSum(int[] a, int target) {
         // O(n) with hashmap
         int n=a.length;
-        int ans[]=new int[2];
+        int ans[]=new int[2]; //tostore the indexes
         HashMap<Integer, Integer> hm=new HashMap<>();
         
         for(int i=0; i<n; i++){
